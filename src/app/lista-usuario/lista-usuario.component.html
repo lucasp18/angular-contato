@@ -1,0 +1,27 @@
+<h3>
+  lista de Contatos
+</h3>
+
+<div class="row justify-content-start">
+	<div class="col-9">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Nome</th>
+					<th>E-mail</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr [ngStyle]="{'cursor': 'pointer'}" *ngFor="let item of listaDeContatos2, let i = index " (click)='contatoClicado(item.id)' >
+					<th scope="row">{{i+1}}</th>
+					<td>{{item.nome}}</td>
+					<td>{{item.email}}</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	
+
+</div>

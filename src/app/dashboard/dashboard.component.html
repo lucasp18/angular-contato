@@ -1,0 +1,12 @@
+<h1>
+  Aplicativo de contatos
+</h1>
+<br>
+<br>
+<button (click)="deslogar()">Deslogar</button>
+<nav>	
+	<a routerLink = "/listar-usuarios" routerLinkActive="active">Listagem de Contatos</a>
+	<a routerLink = "/usuario-create" routerLinkActive="active">Cadastro de novos Contatos</a>	
+</nav>
+
+<router-outlet></router-outlet>
